@@ -9,8 +9,8 @@ public class Temperatura {
         final int i = 32;
         final double j = 5 / 9.0;
         System.out.println("Digite a temperatura em fahrenheit: ");
-        int f = input.nextInt();
-        System.out.println("O resultado da conversão é: " + (f - i) * j);
+        double f = input.nextInt();
+        System.out.println("O resultado da conversão é: " + (f - i) * j + " Cº");
         input.close();
     }
 }

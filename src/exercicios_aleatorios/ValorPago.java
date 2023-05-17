@@ -11,7 +11,9 @@ Fórmula : (valor1*quant1 + valor2*quant2)*(IPI/100 + 1)*/
 
 
 public class ValorPago {
+    @SuppressWarnings("all")
     public static void main(String[] args) {
+        
         Scanner input = new Scanner(System.in);
         System.out.println("Digite a porcentagem do IPI a ser acrescido: ");
         int ipi = input.nextInt();
@@ -28,7 +30,6 @@ public class ValorPago {
         System.out.println("Digite a quantidade e peças 2: ");
         int quant2 = input.nextInt();
         double total = (valor1 * quant1 + valor2 * quant2) * (ipi / 100 + 1);
-        System.out.println("O valor total é de: " + total);
-        input.close();
+        System.out.println("O valor total é de: " + total);  
     }   
 }
