@@ -1,7 +1,9 @@
 package fundamentos;
 
 /* A inferencia se refere a não fazer a declaração de um tipo especifico
- * exemplo, ao invés de inicializar a variavel como int, se inicializa como var
+ * ou seja, os tipos podem ser inicializados de acordo com o contexto do
+ * codigo.
+ * Exemplo, ao invés de inicializar a variavel como int, se inicializa como var
  * e lhe atribui o valor 10, o java vai tratar essa variavel como int, e não
  * pode atribuir outro tipo de dado uma vez que float , boolean, string,
  * todos são diferentes de int, até pode inicializar como float e atribuir um int
