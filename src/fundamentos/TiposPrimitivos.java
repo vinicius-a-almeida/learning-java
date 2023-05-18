@@ -44,6 +44,6 @@ public class TiposPrimitivos {
 
         System.out.println(id + ": está de ferias: " + estaDeFerias);
 
-        System.out.println("Status: " + status);
+        System.out.println("Status: " + status);  
     }
 }
