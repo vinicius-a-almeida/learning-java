@@ -11,6 +11,8 @@ Fórmula : (valor1*quant1 + valor2*quant2)*(IPI/100 + 1)*/
 
 
 public class ValorPago {
+    //foi usado o @SuppressWarnings pois ele estava
+    //reclamando que tinha variaveis que não estão sendo usadas
     @SuppressWarnings("all")
     public static void main(String[] args) {
         
