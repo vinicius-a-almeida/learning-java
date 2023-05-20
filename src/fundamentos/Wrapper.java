@@ -24,11 +24,17 @@ public class Wrapper {
         Short s = 1000; 
         Integer i = Integer.parseInt("10000"); //int
         Long l = 100000L;
+        Character c = '#';
+        Float f = 123.0F;
+        Double d = 1234.5678;
 
         System.out.println(b.byteValue());
         System.out.println(s.toString());
         System.out.println(i);
         System.out.println(l);
+        System.out.println(c + "...");
+        System.out.println(f);
+        System.out.println(d);
     }
 }
 
