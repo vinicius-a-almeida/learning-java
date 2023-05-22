@@ -14,6 +14,8 @@ public class Logicos {
         // Tabela verdade E
         System.out.println(true && true);
         System.out.println(true && false);
-        System.out.println(false && true);
+        System.out.println(false && true); // dead code pois false implica que
+        // automaticamente tudo é false sem necessariamente checar a outra
+        //condição
     }
 }
