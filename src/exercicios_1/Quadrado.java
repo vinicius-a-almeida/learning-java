@@ -2,7 +2,7 @@ package exercicios_1;
 
 import java.util.Scanner;
 
-public class quadrado {
+public class Quadrado {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("digite o valor do lado do quadrado: ");
