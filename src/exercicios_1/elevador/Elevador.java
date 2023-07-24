@@ -1,7 +1,7 @@
 package exercicios_1.elevador;
 
 public class Elevador {
-    int andar, totalAndares, capacidade, pessoasElevador;
+    private int andar, pessoasElevador, totalAndares, capacidade;
 
     Elevador(int andar,int totalAndares, int capacidade, int pessoasElevador){
         this.andar = 0;
@@ -48,14 +48,17 @@ public class Elevador {
             return pessoasElevador++;
         }
         else{
+            System.out.println("Cabe mais não");
             return pessoasElevador;
         }
     }
     int sair(){
         if(pessoasElevador != 0){
+            System.out.println("Vaza");
             return pessoasElevador--;
         }
         else{
+            System.out.println("Tem ninguem aqui");
             return pessoasElevador;
         }
     }
@@ -72,6 +75,7 @@ public class Elevador {
     }
 
     int desce(){
+        System.out.println("capacidade: " + capacidade);
         if(andar != 0){
             System.out.println("você está no andar: " + (andar - 1));
             return andar--;

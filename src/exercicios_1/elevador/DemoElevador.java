@@ -13,7 +13,9 @@ public class DemoElevador {
 
         //pedindo a quantidade de andares que tem no prédio
         System.out.println("Digite a quantidade de andares que tem no prédio");
-        elevador.totalAndares = input.nextInt();
+        elevador.setTotalAndares(input.nextInt());
+        System.out.println("Digite a capacidade de pessoas no elevador");
+        elevador.setCapacidade(input.nextInt());
 
 
         // do while para que o usuario possa encerrar a aplicação no momento que quiser
@@ -36,6 +38,7 @@ public class DemoElevador {
             elevador.sair();
         }
         }while(escolha != -1);
+        
         input.close();
     }
 }
