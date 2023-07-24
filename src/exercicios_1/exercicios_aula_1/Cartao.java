@@ -3,6 +3,8 @@ package exercicios_1.exercicios_aula_1;
 import java.util.Scanner;
 import java.util.Calendar;
 
+@SuppressWarnings("all")
+
 public class Cartao {
     public static void main(String[] args) {
         String nome;

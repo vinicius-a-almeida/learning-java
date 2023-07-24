@@ -10,7 +10,8 @@ public class MinutosDias {
         final double dia = 1440, hora = 60;
         double res = dia / min;
         res -= dia / hora;
-        System.out.printf("Dias: %g\t Horas\t min:%g", res, );
+        System.out.printf("Dias: %g\t Horas\t min:%g", res);
+        input.close();
     }
     
     

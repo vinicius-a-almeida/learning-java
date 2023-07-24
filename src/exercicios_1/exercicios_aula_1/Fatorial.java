@@ -2,6 +2,8 @@ package exercicios_1.exercicios_aula_1;
 
 import java.util.Scanner;
 
+@SuppressWarnings("all")
+
 public class Fatorial {
     
     public static void main(String[] args) {
