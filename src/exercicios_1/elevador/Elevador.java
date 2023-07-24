@@ -4,7 +4,7 @@ public class Elevador {
     int andar, totalAndares, capacidade, pessoasElevador;
 
     Elevador(int andar,int totalAndares, int capacidade, int pessoasElevador){
-        this.andar = andar = 0;
+        this.andar = 0;
         this.totalAndares = totalAndares;
         this.capacidade = capacidade;
         this.pessoasElevador = pessoasElevador;
@@ -43,28 +43,36 @@ public class Elevador {
     }
 
     int entra(int pessoasElevador){
-        if(capacidade >= pessoasElevador){
+        if(pessoasElevador < capacidade){
             return pessoasElevador++;
         }
         else{
-            return 1;
+            return -1;
         }
     }
     int sai(int pessoasElevador){
-        if(capacidade <= pessoasElevador){
+        if(pessoasElevador != 0){
             return pessoasElevador--;
         }
         else{
-            return 1;
+            return -1;
         }
     }
 
-    int sobe(int andar){
-        if(andar <= totalAndares){
+    int sobe(){
+        if(andar < totalAndares){
             return andar ++;
         }
         else{
-            return 1;
+            return -1;
+        }
+    }
+
+    int desce(){
+        if(andar != 0){
+            return andar--;
+        }else{
+            return -1;
         }
     }
 }
