@@ -9,7 +9,8 @@ public class DemoElevador {
 
         // intanciando a classe elevador
         Elevador elevador = new Elevador(0, 0, 0, 0);
-        int andar = elevador.andar, escolha;
+        int escolha;
+
         //pedindo a quantidade de andares que tem no prédio
         System.out.println("Digite a quantidade de andares que tem no prédio");
         elevador.totalAndares = input.nextInt();
@@ -17,24 +18,22 @@ public class DemoElevador {
 
         // do while para que o usuario possa encerrar a aplicação no momento que quiser
         do{
-        System.out.println("Digite 1 caso queira subir um andar ou 0 caso queira descer: \n");
+        System.out.println("Digite 1 caso queira subir um andar ou 0 caso queira descer, 2 para entrar e 3 para sair: \n");
         System.out.println("Digite -1 para sair: ");
         escolha = input.nextInt();
+
+
         if(escolha == 1){
-            andar = elevador.sobe();
-            if(andar == -1){
-                System.out.println("Você já está no ultimo andar!");
-            }else{
-                System.out.println("você está no andar: " + andar);    
-            }
+            elevador.sobe();
             
         }else if(escolha == 0){
-            andar = elevador.desce();
-            if(andar == -1){
-                System.out.println("Você já está no terreo!");
-            }else{
-                System.out.println("você está no andar: " + andar);    
-            }
+            elevador.desce();
+        }
+        if(escolha == 2){
+            elevador.entra();
+            
+        }else if(escolha == 3){
+            elevador.sair();
         }
         }while(escolha != -1);
         input.close();

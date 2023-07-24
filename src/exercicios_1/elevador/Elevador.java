@@ -42,37 +42,42 @@ public class Elevador {
         this.pessoasElevador = pessoasElevador;
     }
 
-    int entra(int pessoasElevador){
+    int entra(){
         if(pessoasElevador < capacidade){
+            System.out.println("Entre ai meu peixe: " + (pessoasElevador + 1));
             return pessoasElevador++;
         }
         else{
-            return -1;
+            return pessoasElevador;
         }
     }
-    int sai(int pessoasElevador){
+    int sair(){
         if(pessoasElevador != 0){
             return pessoasElevador--;
         }
         else{
-            return -1;
+            return pessoasElevador;
         }
     }
 
     int sobe(){
         if(andar < totalAndares){
-            return andar ++;
+            System.out.println("você está no andar: " + (andar + 1));
+            return andar++;
         }
         else{
-            return -1;
+            System.out.println("Você já está no ultimo andar!");
+            return andar;
         }
     }
 
     int desce(){
         if(andar != 0){
+            System.out.println("você está no andar: " + (andar - 1));
             return andar--;
         }else{
-            return -1;
+            System.out.println("Você já está no terreo!");
+            return andar;
         }
     }
 }
